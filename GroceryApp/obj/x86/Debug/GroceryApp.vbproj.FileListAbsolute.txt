@@ -1,0 +1,10 @@
+C:\Users\Tom\documents\visual studio 2010\Projects\GroceryApp\GroceryApp\bin\Debug\GroceryApp.exe
+C:\Users\Tom\documents\visual studio 2010\Projects\GroceryApp\GroceryApp\bin\Debug\GroceryApp.pdb
+C:\Users\Tom\documents\visual studio 2010\Projects\GroceryApp\GroceryApp\bin\Debug\GroceryApp.xml
+C:\Users\Tom\documents\visual studio 2010\Projects\GroceryApp\GroceryApp\obj\x86\Debug\GroceryApp.GroceryItemForm.resources
+C:\Users\Tom\documents\visual studio 2010\Projects\GroceryApp\GroceryApp\obj\x86\Debug\GroceryApp.LoginForm.resources
+C:\Users\Tom\documents\visual studio 2010\Projects\GroceryApp\GroceryApp\obj\x86\Debug\GroceryApp.Resources.resources
+C:\Users\Tom\documents\visual studio 2010\Projects\GroceryApp\GroceryApp\obj\x86\Debug\GroceryApp.vbproj.GenerateResource.Cache
+C:\Users\Tom\documents\visual studio 2010\Projects\GroceryApp\GroceryApp\obj\x86\Debug\GroceryApp.exe
+C:\Users\Tom\documents\visual studio 2010\Projects\GroceryApp\GroceryApp\obj\x86\Debug\GroceryApp.xml
+C:\Users\Tom\documents\visual studio 2010\Projects\GroceryApp\GroceryApp\obj\x86\Debug\GroceryApp.pdb
