@@ -100,7 +100,7 @@ Partial Class LoginForm
         Me.Label1.ForeColor = System.Drawing.SystemColors.MenuHighlight
         Me.Label1.Location = New System.Drawing.Point(37, 34)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(292, 39)
+        Me.Label1.Size = New System.Drawing.Size(283, 38)
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "Grocery List Login"
         '
@@ -123,6 +123,7 @@ Partial Class LoginForm
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "LoginForm"
+        Me.ShowInTaskbar = False
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Please Login"

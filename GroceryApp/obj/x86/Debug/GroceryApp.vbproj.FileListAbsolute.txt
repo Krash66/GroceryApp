@@ -8,3 +8,4 @@ C:\Users\Tom\documents\visual studio 2010\Projects\GroceryApp\GroceryApp\obj\x86
 C:\Users\Tom\documents\visual studio 2010\Projects\GroceryApp\GroceryApp\obj\x86\Debug\GroceryApp.exe
 C:\Users\Tom\documents\visual studio 2010\Projects\GroceryApp\GroceryApp\obj\x86\Debug\GroceryApp.xml
 C:\Users\Tom\documents\visual studio 2010\Projects\GroceryApp\GroceryApp\obj\x86\Debug\GroceryApp.pdb
+C:\Users\Tom\Documents\Visual Studio 2010\Projects\GroceryApp\GroceryApp\obj\x86\Debug\GroceryApp.BasketDisplayForm.resources

@@ -40,6 +40,10 @@ Partial Class GroceryItemForm
         Me.txtScanNumber = New System.Windows.Forms.TextBox()
         Me.txtBrandName = New System.Windows.Forms.TextBox()
         Me.lblUser = New System.Windows.Forms.Label()
+        Me.ToolStripMenuItemLoad = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItemSave = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.numPrice, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grpDescription.SuspendLayout()
@@ -58,7 +62,7 @@ Partial Class GroceryItemForm
         '
         'ToolStripMenuItem1
         '
-        Me.ToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItemExit})
+        Me.ToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItemLoad, Me.ToolStripMenuItemSave, Me.ToolStripMenuItemExit})
         Me.ToolStripMenuItem1.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
         Me.ToolStripMenuItem1.Size = New System.Drawing.Size(108, 27)
@@ -67,7 +71,7 @@ Partial Class GroceryItemForm
         'ToolStripMenuItemExit
         '
         Me.ToolStripMenuItemExit.Name = "ToolStripMenuItemExit"
-        Me.ToolStripMenuItemExit.Size = New System.Drawing.Size(107, 28)
+        Me.ToolStripMenuItemExit.Size = New System.Drawing.Size(152, 28)
         Me.ToolStripMenuItemExit.Text = "E&xit"
         '
         'ToolStripMenuItem2
@@ -220,6 +224,33 @@ Partial Class GroceryItemForm
         Me.lblUser.Size = New System.Drawing.Size(0, 18)
         Me.lblUser.TabIndex = 13
         '
+        'ToolStripMenuItemLoad
+        '
+        Me.ToolStripMenuItemLoad.Name = "ToolStripMenuItemLoad"
+        Me.ToolStripMenuItemLoad.Size = New System.Drawing.Size(152, 28)
+        Me.ToolStripMenuItemLoad.Text = "&Load"
+        '
+        'ToolStripMenuItemSave
+        '
+        Me.ToolStripMenuItemSave.Name = "ToolStripMenuItemSave"
+        Me.ToolStripMenuItemSave.Size = New System.Drawing.Size(152, 28)
+        Me.ToolStripMenuItemSave.Text = "&Save"
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.DefaultExt = "csv"
+        Me.OpenFileDialog1.FileName = "GroceryList.csv"
+        Me.OpenFileDialog1.Filter = "CSV files|*.csv|All Files|*.*"
+        Me.OpenFileDialog1.Title = "Open Grocery List"
+        '
+        'SaveFileDialog1
+        '
+        Me.SaveFileDialog1.CreatePrompt = True
+        Me.SaveFileDialog1.DefaultExt = "csv"
+        Me.SaveFileDialog1.FileName = "GroceryList.csv"
+        Me.SaveFileDialog1.Filter = "CSV files|*.csv|All Files|*.*"
+        Me.SaveFileDialog1.Title = "Save Grocery List"
+        '
         'GroceryItemForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -268,4 +299,8 @@ Partial Class GroceryItemForm
     Friend WithEvents ToolStripMenuItemAdd As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripMenuItemView As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents lblUser As System.Windows.Forms.Label
+    Friend WithEvents ToolStripMenuItemLoad As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItemSave As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
+    Friend WithEvents SaveFileDialog1 As System.Windows.Forms.SaveFileDialog
 End Class

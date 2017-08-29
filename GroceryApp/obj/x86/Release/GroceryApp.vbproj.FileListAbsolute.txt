@@ -1,0 +1,11 @@
+C:\Users\Tom\Documents\Visual Studio 2010\Projects\GroceryApp\GroceryApp\bin\Release\GroceryApp.exe
+C:\Users\Tom\Documents\Visual Studio 2010\Projects\GroceryApp\GroceryApp\bin\Release\GroceryApp.pdb
+C:\Users\Tom\Documents\Visual Studio 2010\Projects\GroceryApp\GroceryApp\bin\Release\GroceryApp.xml
+C:\Users\Tom\Documents\Visual Studio 2010\Projects\GroceryApp\GroceryApp\obj\x86\Release\GroceryApp.GroceryItemForm.resources
+C:\Users\Tom\Documents\Visual Studio 2010\Projects\GroceryApp\GroceryApp\obj\x86\Release\GroceryApp.LoginForm.resources
+C:\Users\Tom\Documents\Visual Studio 2010\Projects\GroceryApp\GroceryApp\obj\x86\Release\GroceryApp.Resources.resources
+C:\Users\Tom\Documents\Visual Studio 2010\Projects\GroceryApp\GroceryApp\obj\x86\Release\GroceryApp.vbproj.GenerateResource.Cache
+C:\Users\Tom\Documents\Visual Studio 2010\Projects\GroceryApp\GroceryApp\obj\x86\Release\GroceryApp.exe
+C:\Users\Tom\Documents\Visual Studio 2010\Projects\GroceryApp\GroceryApp\obj\x86\Release\GroceryApp.xml
+C:\Users\Tom\Documents\Visual Studio 2010\Projects\GroceryApp\GroceryApp\obj\x86\Release\GroceryApp.pdb
+C:\Users\Tom\Documents\Visual Studio 2010\Projects\GroceryApp\GroceryApp\obj\x86\Release\GroceryApp.BasketDisplayForm.resources
