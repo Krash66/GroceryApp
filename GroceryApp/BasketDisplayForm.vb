@@ -6,7 +6,7 @@
         'Basket Object instead of just the collection as the Basket Object
         viewBasket.DataSource = GroceryItemForm.basket.listArray
         'That's it!! The DataGridView will automatically fill in it's data
-        'from the collection object "basket.listArray"
+        'from the collection object "basket.listArray"  
     End Sub
 
 End Class

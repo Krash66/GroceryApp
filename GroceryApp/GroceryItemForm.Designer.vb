@@ -24,6 +24,8 @@ Partial Class GroceryItemForm
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItemLoad = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItemSave = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItemExit = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItemAdd = New System.Windows.Forms.ToolStripMenuItem()
@@ -40,8 +42,6 @@ Partial Class GroceryItemForm
         Me.txtScanNumber = New System.Windows.Forms.TextBox()
         Me.txtBrandName = New System.Windows.Forms.TextBox()
         Me.lblUser = New System.Windows.Forms.Label()
-        Me.ToolStripMenuItemLoad = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItemSave = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.MenuStrip1.SuspendLayout()
@@ -68,10 +68,22 @@ Partial Class GroceryItemForm
         Me.ToolStripMenuItem1.Size = New System.Drawing.Size(108, 27)
         Me.ToolStripMenuItem1.Text = "&Application"
         '
+        'ToolStripMenuItemLoad
+        '
+        Me.ToolStripMenuItemLoad.Name = "ToolStripMenuItemLoad"
+        Me.ToolStripMenuItemLoad.Size = New System.Drawing.Size(117, 28)
+        Me.ToolStripMenuItemLoad.Text = "&Load"
+        '
+        'ToolStripMenuItemSave
+        '
+        Me.ToolStripMenuItemSave.Name = "ToolStripMenuItemSave"
+        Me.ToolStripMenuItemSave.Size = New System.Drawing.Size(117, 28)
+        Me.ToolStripMenuItemSave.Text = "&Save"
+        '
         'ToolStripMenuItemExit
         '
         Me.ToolStripMenuItemExit.Name = "ToolStripMenuItemExit"
-        Me.ToolStripMenuItemExit.Size = New System.Drawing.Size(152, 28)
+        Me.ToolStripMenuItemExit.Size = New System.Drawing.Size(117, 28)
         Me.ToolStripMenuItemExit.Text = "E&xit"
         '
         'ToolStripMenuItem2
@@ -223,18 +235,6 @@ Partial Class GroceryItemForm
         Me.lblUser.Name = "lblUser"
         Me.lblUser.Size = New System.Drawing.Size(0, 18)
         Me.lblUser.TabIndex = 13
-        '
-        'ToolStripMenuItemLoad
-        '
-        Me.ToolStripMenuItemLoad.Name = "ToolStripMenuItemLoad"
-        Me.ToolStripMenuItemLoad.Size = New System.Drawing.Size(152, 28)
-        Me.ToolStripMenuItemLoad.Text = "&Load"
-        '
-        'ToolStripMenuItemSave
-        '
-        Me.ToolStripMenuItemSave.Name = "ToolStripMenuItemSave"
-        Me.ToolStripMenuItemSave.Size = New System.Drawing.Size(152, 28)
-        Me.ToolStripMenuItemSave.Text = "&Save"
         '
         'OpenFileDialog1
         '

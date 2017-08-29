@@ -242,7 +242,7 @@
             fs.Close()
         End If
         'Now code returns to ToolStripMenuItemSave_Click event where it left off 
-        'at "SaveFileDialog1.ShowDialog(Me)" with a result of "OK"
+        'at "SaveFileDialog1.ShowDialog(Me)" with a result of "OK"  
 
     End Sub
 
