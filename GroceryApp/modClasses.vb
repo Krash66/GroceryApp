@@ -1,25 +1,67 @@
 ﻿Module modClasses
 
-#Region "Aisle Enumeration"
-    Public Enum Aisle
-        Bakery
-        CannedGood
-        Drinks
-        Deli
-        DryGoods
-        FrozenFood
-        Produce
-    End Enum
-#End Region
-
 #Region "Class Grocery Item"
     Public Class GroceryItem
 
-        Public Property Scan As String
-        Public Property Name As String
+        Private Property _ScanNumber As String
+        Private Property _BrandName As String
+        Private Property _Price As Double
+        Private Property _Aisle As Aisle
+        Private Property _Description As String
+
+        Public ReadOnly Property ScanNumber As String
+            Get
+                Return _ScanNumber
+            End Get
+        End Property
+
+        Public Property BrandName As String
+            Get
+                Return _BrandName
+            End Get
+            Set(ByVal value As String)
+                _BrandName = value
+            End Set
+        End Property
+
         Public Property Price As Double
+            Get
+                Return _Price
+            End Get
+            Set(value As Double)
+                _Price = value
+            End Set
+        End Property
+
         Public Property Aisle As Aisle
+            Get
+                Return _Aisle
+            End Get
+            Set(value As Aisle)
+                _Aisle = value
+            End Set
+        End Property
+
         Public Property Description As String
+            Get
+                Return _Description
+            End Get
+            Set(value As String)
+                _Description = value
+            End Set
+        End Property
+
+        Public Sub New(ByVal ScanNumber As String)
+            Me._ScanNumber = ScanNumber
+        End Sub
+
+        Public Sub New(ByVal ScanNumber As String, ByVal BrandName As String, ByVal Price As Double, ByVal Aisle As Aisle, ByVal Description As String)
+            Me.New(ScanNumber)
+            Me.BrandName = BrandName
+            Me.Price = Price
+            Me.Aisle = Aisle
+            Me.Description = Description
+        End Sub
 
     End Class
 #End Region
@@ -85,5 +127,17 @@
 
     End Class
 #End Region
-    
+
+#Region "Aisle Enumeration"
+    Public Enum Aisle
+        Bakery
+        CannedGood
+        Drinks
+        Deli
+        DryGoods
+        FrozenFood
+        Produce
+    End Enum
+#End Region
+
 End Module

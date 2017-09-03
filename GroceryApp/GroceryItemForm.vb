@@ -48,25 +48,21 @@
         'set the scan number
         txtScanNumber.Text = txtBrandName.Text.Substring(0, 3) & "1019"
         'create a new GroceryItem object and populate it
-        Dim newItem As New GroceryItem
-        'with just let's you easily set all the properties of the new groceryItem Object,
-        'without having to say "newItem.Aisle = [Enum].Parse(GetType(Aisle), cboAisle.Text)",
+        Dim newItem As New GroceryItem(txtScanNumber.Text, _
+                                       txtBrandName.Text.Trim, _
+                                       numPrice.Value, _
+                                       [Enum].Parse(GetType(Aisle), cboAisle.Text), _
+                                       txtDescription.Text.Trim)
+        '**** This corrected to reflect your last email (9/2/17 at 9:30am) ***
         '"newItem.Description = txtDescription.Text.Trim", etc.
         '***NOTE, Always "Trim" user entered text values, in case user add spaces 
         'to beginning or ending of the textbox text. Just good practice, so your Object values are "clean"
-        With newItem
-            .Aisle = [Enum].Parse(GetType(Aisle), cboAisle.Text)
-            .Description = txtDescription.Text.Trim
-            .Name = txtBrandName.Text.Trim
-            .Price = numPrice.Value.ToString
-            .Scan = txtScanNumber.Text
-        End With
         'Add the Item to the Grocery Basket
         basket.Add(newItem)
         'Let user know new item was added, because we will now clear the form for the next entry
         MessageBox.Show("Item added to Grocery Basket: " + _
                         [Enum].GetName(GetType(Aisle), newItem.Aisle) + "," _
-                        + newItem.Scan + "," + newItem.Name, "Item Added", _
+                        + newItem.ScanNumber + "," + newItem.BrandName, "Item Added", _
                         MessageBoxButtons.OK, MessageBoxIcon.Information)
         'Clear the form for the next Item
         txtBrandName.Clear()
@@ -162,7 +158,11 @@
             'check to see if a string array exists, or if it is a blank line before setting the properties of the GroceryItem Object
             If strArr IsNot Nothing Then
                 'Create a new instance of an empty GroceryItem Object
-                Dim TempGroceryItem As New GroceryItem
+                Dim TempGroceryItem As New GroceryItem(strArr(0), _
+                                                       strArr(1), _
+                                                       CType(strArr(2), Double), _
+                                                       CType([Enum].Parse(GetType(Aisle), strArr(3)), Aisle), _
+                                                       strArr(4))
                 'Fill the Object properties with the line of Item data read in and put into the strArr Array
                 'All the items in strArr are string values, so Price and Aisle must be converted to their proper types
                 'If not using "with" you must do the following
@@ -172,17 +172,18 @@
                 'TempGroceryItem.Aisle = CType([Enum].Parse(GetType(Aisle), strArr(3)), Aisle)
                 'TempGroceryItem.Description = strArr(4)
                 'very tedious
-                With TempGroceryItem
-                    .Scan = strArr(0)
-                    .Name = strArr(1)
-                    .Price = CType(strArr(2), Double)
-                    'Aisle was saved as a text string (not the number value in the Enumeration) 
-                    'and must be converted into and Aisle Object using "parse"
-                    'BUT, Parse only converts the string value into a generic Object, 
-                    'so, "Ctype" is used to convert it into an Aisle class Object
-                    .Aisle = CType([Enum].Parse(GetType(Aisle), strArr(3)), Aisle)
-                    .Description = strArr(4)
-                End With
+                '** Commented out because of the addition of the "New" methods in class GroceryItem *****
+                'With TempGroceryItem
+                '    .ScanNumber = strArr(0)
+                '    .BrandName = strArr(1)
+                '    .Price = CType(strArr(2), Double)
+                '    'Aisle was saved as a text string (not the number value in the Enumeration) 
+                '    'and must be converted into and Aisle Object using "parse"
+                '    'BUT, Parse only converts the string value into a generic Object, 
+                '    'so, "Ctype" is used to convert it into an Aisle class Object
+                '    .Aisle = CType([Enum].Parse(GetType(Aisle), strArr(3)), Aisle)
+                '    .Description = strArr(4)
+                'End With
                 'Now add each new GroceryItem into the basket object's grocery listarray collection
                 basket.listArray.Add(TempGroceryItem)
             End If
@@ -254,7 +255,7 @@
         'see the Aisle name instead of just a number. Useful when printing a spreadsheet or importing the CSV file
         'into a different program. NOTE* the "space underscore return" or " _" lets the programmer split line of code
         'for easier reading.
-        Return Item.Scan & "," & Item.Name & "," & Item.Price.ToString & "," & _
+        Return Item.ScanNumber & "," & Item.BrandName & "," & Item.Price.ToString & "," & _
             [Enum].GetName(GetType(Aisle), Item.Aisle).ToString & "," & Item.Description
 
     End Function
